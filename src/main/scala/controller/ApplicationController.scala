@@ -13,6 +13,7 @@ trait ApplicationController extends SkinnyController
     // with SkinnySessionFilter
     with ErrorPageFilter {
 
-  // override def defaultLocale = Some(new java.util.Locale("ja"))
+  // http://skinny-framework.org/documentation/i18n.html
+  override def defaultLocale = Some(new java.util.Locale("ja"))
 
 }
